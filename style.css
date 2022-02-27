@@ -1,0 +1,253 @@
+/* Css reset */
+body{
+
+
+    padding:0;
+    margin:0;
+}
+#logo img{
+    height: 76px;
+    margin: 23px;
+}
+/* navigation menu */
+#navigationmenu{
+    display: flex;
+    position: relative;
+    align-items: center;
+    
+    height: 88px;
+    
+}
+#navigationmenu::before{
+    content: "";
+    position: absolute;
+    background-color: saddlebrown;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+z-index: -1;
+opacity: 0.9;
+}
+#navigationmenu ul {
+    display: flex;
+    
+}
+#navigationmenu ul li  {
+    list-style: none;
+    margin: 5px;
+    
+}
+#navigationmenu ul li a {
+   text-decoration: none;
+   padding: 5px 23px ;
+   color: seashell;
+   font-size:1.2rem;
+   display: block;  
+   border-radius: 20px;
+}
+#navigationmenu ul li a:hover {
+background-color: brown;
+}
+
+/* Section 1 */
+#section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 397px;
+}
+
+#section1::before{
+  content: "";
+  background: url('dry\ fruits.jpg') no-repeat center center/cover;
+  width: 100%;
+  height: 419px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -2;
+  opacity: 0.6;
+
+  
+
+}
+/* section 2 */
+#section2{
+
+    
+    position: relative;
+}
+
+
+
+.box{
+  
+    display: flex;
+}
+.items img{
+    height: 156px;
+}
+.items {
+   display: flex;
+    border: 12px solid brown;
+    background-color: rgb(225, 197, 197);
+    border-radius: 34px;
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    padding: 23px 34px;
+    margin: 23px 34px;
+    text-align: center;
+}
+/* Section3  */
+
+.clientsimages img{
+    height: 113px;
+    margin: 23px 34px ;
+    padding: 23px 34px ;
+}
+.clientsimages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+border: 5px solid brown;
+border-radius: 12px;
+
+}
+/* section 4 */
+#contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;}
+#contact{
+    position: relative;
+}
+#contact::before{
+   content: "";
+  background: url('fig.jpg')no-repeat center center/cover;
+  height: 100%;
+width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+}
+
+  
+ 
+
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+     padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem; 
+} 
+.copywrite{
+background-color: black;
+color: blanchedalmond;
+margin: 0;
+}
+
+/* Utility Clases */
+.h-primary{
+    font-size: 4.2rem;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    color: rgb(216, 127, 10);
+}
+.btn{
+    margin: 23px;
+    padding: 10px;
+    border-radius: 23px;
+    color: wheat;
+    border: 5px solid rgb(0, 0, 0);
+    background-color: brown;
+    cursor: pointer;
+}
+.btn:hover{
+   
+    background-color: rgb(199, 85, 85);
+}
+.center{
+    text-align: center;
+}
+@media screen and  (max-width:1100px){
+#navigationmenu{
+    flex-direction: column;
+    height: 350px;
+}
+#navigationmenu ul{
+    flex-direction: column;
+}
+.h-primary {
+    font-size: 2.2rem;
+   
+}
+.box{
+    flex-direction: column;
+}
+#section1{
+   height: 550px;
+}
+#section1::before{
+height: 100%;
+}
+.items {
+  
+    height: 364px;
+   
+  }
+  
+
+.center {
+
+    text-align: center;
+    width: 192px;
+
+}
+.items img {
+    height: 98px;
+  }
+  .clientsimages {
+ 
+    flex-direction: column;
+  }
+  .h-primary {
+    font-size: 1.2rem;
+  }
+  #contact-box input, #contact-box textarea {
+    width: 87%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+  }
+  #contact-box textarea {
+    width: 82%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+  }
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
