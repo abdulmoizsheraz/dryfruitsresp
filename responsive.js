@@ -1,0 +1,9 @@
+  a=document.querySelector('.navigationmenu');
+  b=document.querySelector('.ulwaliclass');
+  c=document.querySelector('.logo');
+   burger=document.querySelector('.burger');
+ burger.addEventListener('click',()=>{
+     b.classList.toggle('v-class-resp');
+     c.classList.toggle('v-class-resp');
+     a.classList.toggle('h-nav-resp');
+ })
